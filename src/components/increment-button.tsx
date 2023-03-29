@@ -1,5 +1,8 @@
+import { useCounter } from "../contexts/context"
+
 export const IncrementButton = () => {
+    const { increment } = useCounter()
     return (
-        <button>Increment</button>
+        <button onClick={increment}>Increment</button>
     )
 }
